@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+
+body {
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  color: #333333;
+  min-width: 370px;
+}
+
+body a {
+  text-decoration: none;
+  color: #fa7268;
+}
+
+body h1 {
+  margin-top: 42px;
+  margin-bottom: 8px;
+}
+
+body h2 {
+  margin-top: 42px;
+  margin-bottom: 8px;
+  color: #333333;
+}
+body h3 {
+  margin-top: 42px;
+  margin-bottom: 8px;
+  color: #aaaaaa;
+}
+
+.pageContent {
+  max-width: 1000px;
+}

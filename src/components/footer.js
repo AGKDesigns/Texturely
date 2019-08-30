@@ -1,7 +1,8 @@
 import React from "react"
 import styled from "styled-components"
+import { Link } from "gatsby"
 
-const HeaderContainer = styled.div`
+const FooterContainer = styled.div`
   text-decoration: none;
   padding: 24px;
   height: auto;
@@ -15,8 +16,8 @@ const HeaderContainer = styled.div`
 `
 
 const Logo = styled.img`
-  height: 48px;
-  width: 300px;
+  height: 50px;
+  width: 400px;
   display: inline-block;
 `
 
@@ -25,10 +26,11 @@ const TagLine = styled.p`
   color: #aaaaaa;
 `
 
-const Header = ({ data }) => (
-  <HeaderContainer>
-    <Logo src={require("../images/logo.png")} />
-    <TagLine> Free premium textures for personal and commercial use.</TagLine>
-  </HeaderContainer>
+const Footer = ({ data }) => (
+  <FooterContainer>
+    <Link to="/About">About</Link>
+    <Link to="/About">Donate via Paypal</Link>
+    <Link to="/About">Donate via Bitcoin</Link>
+  </FooterContainer>
 )
-export default Header
+export default Footer

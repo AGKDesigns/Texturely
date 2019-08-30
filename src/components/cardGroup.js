@@ -10,7 +10,7 @@ const CardArray = styled.div`
   align-content: flex-start;
   flex-wrap: wrap;
   text-decoration: none;
-  background-color: red;
+  background-color: #f0f0f0;
   margin-bottom: 5px;
   margin-top: 50px;
 
@@ -18,7 +18,6 @@ const CardArray = styled.div`
     text-decoration: none;
   }
   @media (max-width: 780px) {
-    grid-template-columns: repeat(1, 1fr);
   }
 `
 
@@ -29,7 +28,9 @@ const CardGroup = ({ data }) => (
         number={edge.node.number}
         title={edge.node.title}
         description={edge.node.description}
+        keywords={edge.node.keyword}
         thumbnail={"https:" + edge.node.thumbnail.file.url}
+        imageLink={"https:" + edge.node.image.file.url}
       ></Card>
     ))}
   </CardArray>

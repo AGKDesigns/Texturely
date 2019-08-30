@@ -5,6 +5,8 @@ import CardGroup from "../components/cardGroup"
 import Header from "../components/header"
 import { graphql } from "gatsby"
 import Helmet from "react-helmet"
+import "./index.css"
+import Footer from "../components/footer"
 
 const IndexPage = ({ data }) => (
   <div>
@@ -16,10 +18,10 @@ const IndexPage = ({ data }) => (
       ]}
     />
     <Header />
-    Hello World
+
     <CardGroup data={data} />
     <SEO title="Home" />
-    <Link to="/About">About</Link>
+    <Footer />
   </div>
 )
 
